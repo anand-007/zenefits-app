@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+/**
+* Company component is responsible for showing company related details
+**/
+
 class Company extends Component {
 
    constructor(props) {

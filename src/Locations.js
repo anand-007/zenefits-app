@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './style/App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
@@ -9,8 +8,9 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-
-
+/**
+* Locations component is responsible for populating the Location of the company
+**/
 
 class Locations extends Component {
 
@@ -34,9 +34,8 @@ class Locations extends Component {
         })
 
         return  <div>{ locationList }</div>
-      
-   
-}
+         
+  }
 }
 
 export default Locations;

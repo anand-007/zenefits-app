@@ -27,19 +27,18 @@ export function fetchCompanyDetails() {
 **/
 export function fetchDepartments(companyId) {
 
+	var url = config.DEPARTMENT_API;
 
+	var request = new Request(url, {
+		method: 'GET', 
+		headers: new Headers({
+			'Authorization': `Bearer pOjrfOYNToyQosKqqprj`
+		})
+	});
+
+	// Now use it!
+	return fetch(request)
 }
-
-/**
-* Fetches all details of employee
-* @param {String} companyId [Company ID]
-* @returns {Object} returns employees of the company
-**/
-export function fetchCompleteEmployeeDetails(companyId) {
-
-
-}
-
 
 
 /**
@@ -87,22 +86,17 @@ export function fetchEmployeeDetail(employeeUrl) {
 **/
 export function fetchCompanyLocation(companyId){
 
-}
+	var url = config.LOCATION_API;
 
-/**
-* Fetches  banks of the company
-* @param {String} companyId [Employee ID]
-* @returns {Object} returns  banks of the employee
-**/
-export function fetchBanks(employeeId){
+	var request = new Request(url, {
+		method: 'GET', 
+		headers: new Headers({
+			'Authorization': `Bearer pOjrfOYNToyQosKqqprj`
+		})
+	});
 
-}
-
-/**
-* Fetches  banks of the company
-* @param {String} companyId [Company ID]
-* @returns {Object} returns company banks of the company
-**/
-export function fetchCompanyBanks(companyId){
+	// Now use it!
+	return fetch(request)
 
 }
+
